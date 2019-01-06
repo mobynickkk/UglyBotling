@@ -10,7 +10,7 @@ VK: www.vk.com/mobynick_kaktys
 
 [ #НАЗВАНИЕ ПРОЕКТА ]
 
-“UglyBotling”
+“#UglyBotling”
 
 [ #ПРОБЛЕМНОЕ ПОЛЕ ]
 
