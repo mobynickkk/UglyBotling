@@ -1,8 +1,3 @@
-class NewBot:
-    """Для наследования в кастомных ботов"""
-    pass
-
-
 class BotConstructor:
     """Класс для создания кастомных ботов"""
     trigger_answer_sheet = {'/start': 'Welcome to the UglyBotling|default'}
@@ -25,7 +20,7 @@ class BotConstructor:
     def __init__(self, name, trigger_answer_sheet):
         """Каждый экземпляр конструктора создает один класс кастомного бота"""
         self.trigger_answer_sheet = trigger_answer_sheet
-        self.bot = type(name, (NewBot,), {})  # Создание класса нового бота
+        self.bot = type(name, (CommonBot,), {})  # Создание класса нового бота
 
     def add_reply(self, trigger):
         """Добавление функционала в кастомного бота из словаря trigger_answer_sheet"""
