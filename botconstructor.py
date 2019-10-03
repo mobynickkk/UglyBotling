@@ -1,3 +1,6 @@
+from commonbot import CommonBot
+
+
 class BotConstructor:
     """Класс для создания кастомных ботов"""
     trigger_answer_sheet = {'/start': 'Welcome to the UglyBotling|default'}
