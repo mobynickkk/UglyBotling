@@ -1,0 +1,159 @@
+@font-face
+    font-family: activist-regular
+    src: url("../../fonts/Activist.otf")
+
+
+$primary-color: #9C27B0
+$primary-color-dark: #7B1FA2
+$bg-color: #374046
+$accent-color: #CDDC39 // #00c853
+
+.constructor
+  height: 100%
+  display: flex
+  background-color: $primary-color
+
+.navigate
+  border: none
+  background-image: url("../../icons/left_arrow.svg")
+  background-color: $primary-color
+  outline: none
+  height: 30px
+  width: 30px
+  &:hover
+    background-color: $primary-color-dark
+
+.meta
+  transition: 0.6s ease all
+  flex: 1
+  font-family: Roboto, sans-serif
+  & > *
+    box-shadow: 0 0 1px rgba(0,0,0,0.5) inset
+    transition: 0.6s all ease
+  &__title
+      display: inline-block
+      font-size: 15px
+      color: #212121
+      margin-top: 2%
+      margin-left: 3%
+      margin-bottom: -2%
+  &__category
+    border-radius: 15px
+    margin: 6% 7% 7%
+    background-color: white
+    height: 15vh
+    width: 40vw
+    &__select
+      color: $bg-color
+      background-color: white
+      outline: none
+      margin: 4%
+      height: 30px
+      width: 90%
+      border: none
+      border-bottom: 2px solid $bg-color
+      &:focus
+        border-bottom: 2px solid $accent-color
+  &__name
+    border-radius: 15px
+    margin: 7%
+    background-color: white
+    height: 60vh
+    width: 40vw
+    &__name_input
+      color: $bg-color
+      background-color: white
+      outline: none
+      margin: 4%
+      height: 30px
+      width: 90%
+      border: none
+      border-bottom: 1px solid $bg-color
+      &:focus
+        border-bottom: 1px solid $accent-color
+  &__checkbox
+    display: flex
+    justify-content: space-around
+    margin: 5% 4% 4%
+    &__label
+      font-size: 15px
+  &__create
+    width: 90%
+    background-color: $accent-color
+    color: $bg-color
+    border: none
+    border-radius: 5px
+    height: 50px
+    margin: 3% 5% 5%
+    outline: none
+    transition: 0.6s ease all
+    &:hover
+      background-color: darken($accent-color, 7.5)
+    &:focus
+      background-color: darken($accent-color, 7.5)
+
+
+.logic
+  font-family: Roboto, sans-serif
+  flex: 1
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  color: white
+  background-color: $bg-color
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  &__title
+    flex: 1
+    font-size: 40px
+    margin: 3% 10% 0
+    display: inline-block
+  &__ready
+    flex: 4
+    margin: 4%
+    &__commands
+      border: none
+      background-color: white
+      margin-top: 1%
+      color: $bg-color
+      outline: none
+      transition: 0.6s ease all
+      cursor: pointer
+      display: block
+      &:hover
+        background-color: #F44336
+        color: white
+        &:after
+          text-align: right
+          content: "<DELETE>"
+      &:focus
+        background-color: #F44336
+        color: white
+        &:after
+          text-align: right
+          content: "<DELETE>"
+  &__add
+    flex: 1
+    &__inner
+      height: 80%
+      border-radius: 5px
+      margin-left: 4%
+      margin-right: 4%
+      background-color: white
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      &__button
+        background-color: $accent-color
+        // background-image: url("../../icons/plus.svg")
+        // background-position: center
+        border: none
+        border-radius: 4px
+        color: $bg-color
+        height: 40px
+        outline: none
+        transition: 0.6s ease all
+        &:hover
+          background-color: darken($accent-color, 7.5)
+        &:focus
+          background-color: darken($accent-color, 7.5)
+
